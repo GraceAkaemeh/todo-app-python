@@ -27,7 +27,7 @@ Die Aufgaben werden in einer MySQL-Datenbank gespeichert und können über eine 
 
 Repository klonen:
 ```sh
-git clone https://github.com/DEIN-GITHUB-NAME/todo-app-python.git
+git clone https://github.com/GraceAkaemeh/todo-app-python.git
 cd todo-app-python
 ```
 
@@ -48,6 +48,9 @@ CREATE TABLE tasks (
 );
 ```
 
+
+**Datenbankkonfiguration**
+
 Zugangsdaten in `task_db.py` anpassen:
 ```python
 conn = mysql.connector.connect(
@@ -58,11 +61,32 @@ conn = mysql.connector.connect(
 )
 ```
 
-**Starten**
+**Die Anwendung ausführen**
 ```sh
 python task_gui.py
 ```
 Die App öffnet sich automatisch in einem GUI-Fenster.
+
+
+**Projektstruktur**
+
+UI-Ebene (Tkinter-GUI)
+Datenbankebene (MySQL-Verbindung)
+Logikebene (Aufgabenbearbeitung)
+
+
+**📚 Was ich gelernt habe**
+Python-GUI-Entwicklung mit Tkinter
+Datenbankintegration mit MySQL
+CRUD-Operationen (Create, Read, Update, Delete)
+Strukturierung kleiner Softwareprojekte
+Verbindung von Frontend- und Backend-Logik
+
+
+**📌 Anmerkungen**
+Dies ist ein Lernprojekt
+Passwörter und Anmeldedaten sollten in realen Anwendungen gesichert werden
+Für Bildungszwecke konzipiert
 
 ---
 
@@ -73,12 +97,12 @@ Tasks are stored in a MySQL database and managed via a graphical user interface 
 
 🚀 **Features**
 
-- ✅ Add, complete, and delete tasks
-- 🎨 Modern interface with Tkinter
-- 📂 Storage in MySQL (no more JSON file)
-- 🔍 Filter: All, Open, Completed
-- 📊 Statistics: Number of completed tasks
-- 🖱️ Double-click task → Mark as completed
+-  Add, complete, and delete tasks
+-  Modern interface with Tkinter
+-  Storage in MySQL (no more JSON file)
+-  Filter: All, Open, Completed
+-  Statistics: Number of completed tasks
+-  Double-click task → Mark as completed
 
 🛠️ **Technologies**
 
@@ -91,7 +115,7 @@ Tasks are stored in a MySQL database and managed via a graphical user interface 
 
 Clone the repository:
 ```sh
-git clone https://github.com/YOUR-GITHUB-NAME/todo-app-python.git
+git clone https://github.com/GraceAkaemeh/todo-app-python.git
 cd todo-app-python
 ```
 
@@ -100,7 +124,7 @@ Install dependencies:
 pip install mysql-connector-python
 ```
 
-Set up the MySQL database:
+**Database Setup**
 ```sql
 CREATE DATABASE ToDoList;
 USE ToDoList;
@@ -112,7 +136,8 @@ CREATE TABLE tasks (
 );
 ```
 
-Adjust credentials in `task_db.py`:
+**Database Configuration**
+Update your credentials in task_db.py:
 ```python
 conn = mysql.connector.connect(
     host="localhost",
@@ -122,8 +147,28 @@ conn = mysql.connector.connect(
 )
 ```
 
-**Start**
+**Run the Application**
 ```sh
 python task_gui.py
 ```
 The app will open automatically in a GUI window.
+
+**Project Structure**
+
+UI Layer (Tkinter GUI)
+Database Layer (MySQL connection)
+Logic Layer (task handling)
+
+
+**📚 What I Learned**
+Python GUI development with Tkinter
+Database integration using MySQL
+CRUD operations (Create, Read, Update, Delete)
+Structuring small software projects
+Connecting frontend and backend logic
+
+
+**📌 Notes**
+This is a learning project
+Passwords and credentials should be secured in real applications
+Designed for educational purposes
